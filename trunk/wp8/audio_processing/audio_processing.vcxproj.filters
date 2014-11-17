@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="aec">
+      <UniqueIdentifier>{06825d2d-20b6-4c83-9970-338909bdd3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aecm">
+      <UniqueIdentifier>{5187a0b3-e4bd-4fce-9a5e-f7e0f5235b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="agc">
+      <UniqueIdentifier>{6e936edb-8262-47ad-a9f2-3c1c5bba9f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{dea16726-daad-4935-9fe9-b2a85ef0aad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ns">
+      <UniqueIdentifier>{6e6d6ecb-173f-4c8d-a43d-d9fa8d67b0c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\modules\audio_processing\audio_buffer.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\audio_processing_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\echo_cancellation_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\echo_control_mobile_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\gain_control_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\high_pass_filter_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\level_estimator_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\noise_suppression_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\processing_component.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\splitting_filter.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\voice_detection_impl.cc" />
+    <ClCompile Include="..\..\modules\audio_processing\aec\aec_core.c">
+      <Filter>aec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aec\aec_core_sse2.c">
+      <Filter>aec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aec\aec_rdft.c">
+      <Filter>aec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aec\aec_rdft_sse2.c">
+      <Filter>aec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aec\aec_resampler.c">
+      <Filter>aec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aec\echo_cancellation.c">
+      <Filter>aec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aecm\aecm_core.c">
+      <Filter>aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aecm\aecm_core_neon.c">
+      <Filter>aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aecm\aecm_core_neon_offsets.c">
+      <Filter>aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\aecm\echo_control_mobile.c">
+      <Filter>aecm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\agc\analog_agc.c">
+      <Filter>agc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\agc\digital_agc.c">
+      <Filter>agc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\ns\noise_suppression.c">
+      <Filter>ns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\ns\noise_suppression_x.c">
+      <Filter>ns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\ns\ns_core.c">
+      <Filter>ns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\ns\nsx_core.c">
+      <Filter>ns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\ns\nsx_core_neon.c">
+      <Filter>ns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\ns\nsx_core_neon_offsets.c">
+      <Filter>ns</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\utility\delay_estimator.c">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\utility\delay_estimator_wrapper.c">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\utility\fft4g.c">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\modules\audio_processing\utility\ring_buffer.c">
+      <Filter>utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\modules\audio_processing\audio_buffer.h" />
+    <ClInclude Include="..\..\modules\audio_processing\audio_processing_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\echo_cancellation_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\echo_control_mobile_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\gain_control_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\high_pass_filter_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\level_estimator_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\noise_suppression_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\processing_component.h" />
+    <ClInclude Include="..\..\modules\audio_processing\splitting_filter.h" />
+    <ClInclude Include="..\..\modules\audio_processing\voice_detection_impl.h" />
+    <ClInclude Include="..\..\modules\audio_processing\aec\aec_core.h">
+      <Filter>aec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\aec\aec_rdft.h">
+      <Filter>aec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\aec\aec_resampler.h">
+      <Filter>aec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\aec\echo_cancellation_internal.h">
+      <Filter>aec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\aecm\aecm_core.h">
+      <Filter>aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\aecm\aecm_defines.h">
+      <Filter>aecm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\agc\analog_agc.h">
+      <Filter>agc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\agc\digital_agc.h">
+      <Filter>agc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\ns\defines.h">
+      <Filter>ns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\ns\ns_core.h">
+      <Filter>ns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\ns\nsx_core.h">
+      <Filter>ns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\ns\nsx_defines.h">
+      <Filter>ns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\ns\windows_private.h">
+      <Filter>ns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\utility\delay_estimator.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\utility\delay_estimator_internal.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\utility\delay_estimator_wrapper.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\utility\fft4g.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\modules\audio_processing\utility\ring_buffer.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\modules\audio_processing\aecm\aecm_core_neon.S">
+      <Filter>aecm</Filter>
+    </None>
+    <None Include="..\..\modules\audio_processing\ns\nsx_core_neon.S">
+      <Filter>ns</Filter>
+    </None>
+  </ItemGroup>
+</Project>

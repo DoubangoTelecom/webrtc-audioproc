@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "system_wrappers", "system_wrappers\system_wrappers.vcproj", "{E9B4CD4D-ED25-4459-9BFB-7E587C0563D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common_audio", "common_audio\common_audio.vcproj", "{EEFA86DC-36F2-4244-95E4-FE534FA034E2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "audio_processing", "audio_processing\audio_processing.vcproj", "{BEE6B38C-884B-4228-B432-D71405651538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B4CD4D-ED25-4459-9BFB-7E587C0563D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9B4CD4D-ED25-4459-9BFB-7E587C0563D7}.Debug|Win32.Build.0 = Debug|Win32
+		{E9B4CD4D-ED25-4459-9BFB-7E587C0563D7}.Release|Win32.ActiveCfg = Release|Win32
+		{E9B4CD4D-ED25-4459-9BFB-7E587C0563D7}.Release|Win32.Build.0 = Release|Win32
+		{EEFA86DC-36F2-4244-95E4-FE534FA034E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EEFA86DC-36F2-4244-95E4-FE534FA034E2}.Debug|Win32.Build.0 = Debug|Win32
+		{EEFA86DC-36F2-4244-95E4-FE534FA034E2}.Release|Win32.ActiveCfg = Release|Win32
+		{EEFA86DC-36F2-4244-95E4-FE534FA034E2}.Release|Win32.Build.0 = Release|Win32
+		{BEE6B38C-884B-4228-B432-D71405651538}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BEE6B38C-884B-4228-B432-D71405651538}.Debug|Win32.Build.0 = Debug|Win32
+		{BEE6B38C-884B-4228-B432-D71405651538}.Release|Win32.ActiveCfg = Release|Win32
+		{BEE6B38C-884B-4228-B432-D71405651538}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
