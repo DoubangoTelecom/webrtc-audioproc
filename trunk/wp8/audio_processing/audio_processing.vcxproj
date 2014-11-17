@@ -61,7 +61,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\modules\interface;C:\Projects\webrtc_src_old\modules\audio_processing;C:\Projects\webrtc_src_old\modules\audio_processing\utility;C:\Projects\webrtc_src_old\modules\audio_processing\include;C:\Projects\webrtc_src_old\modules\audio_processing\aec\include;C:\Projects\webrtc_src_old\modules\audio_processing\aecm\include;C:\Projects\webrtc_src_old\modules\audio_processing\agc\include;C:\Projects\webrtc_src_old\modules\audio_processing\ns\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\system_wrappers\interface</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\modules\interface;..\..\modules\audio_processing;..\..\modules\audio_processing\utility;..\..\modules\audio_processing\include;..\..\modules\audio_processing\aec\include;..\..\modules\audio_processing\aecm\include;..\..\modules\audio_processing\agc\include;..\..\modules\audio_processing\ns\include;..\..\common_audio\signal_processing\include;..\..\system_wrappers\interface</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\modules\interface;C:\Projects\webrtc_src_old\modules\audio_processing;C:\Projects\webrtc_src_old\modules\audio_processing\utility;C:\Projects\webrtc_src_old\modules\audio_processing\include;C:\Projects\webrtc_src_old\modules\audio_processing\aec\include;C:\Projects\webrtc_src_old\modules\audio_processing\aecm\include;C:\Projects\webrtc_src_old\modules\audio_processing\agc\include;C:\Projects\webrtc_src_old\modules\audio_processing\ns\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\system_wrappers\interface</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\modules\interface;..\..\modules\audio_processing;..\..\modules\audio_processing\utility;..\..\modules\audio_processing\include;..\..\modules\audio_processing\aec\include;..\..\modules\audio_processing\aecm\include;..\..\modules\audio_processing\agc\include;..\..\modules\audio_processing\ns\include;..\..\common_audio\signal_processing\include;..\..\system_wrappers\interface</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -87,7 +87,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\modules\interface;C:\Projects\webrtc_src_old\modules\audio_processing;C:\Projects\webrtc_src_old\modules\audio_processing\utility;C:\Projects\webrtc_src_old\modules\audio_processing\include;C:\Projects\webrtc_src_old\modules\audio_processing\aec\include;C:\Projects\webrtc_src_old\modules\audio_processing\aecm\include;C:\Projects\webrtc_src_old\modules\audio_processing\agc\include;C:\Projects\webrtc_src_old\modules\audio_processing\ns\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\system_wrappers\interface</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\modules\interface;..\..\modules\audio_processing;..\..\modules\audio_processing\utility;..\..\modules\audio_processing\include;..\..\modules\audio_processing\aec\include;..\..\modules\audio_processing\aecm\include;..\..\modules\audio_processing\agc\include;..\..\modules\audio_processing\ns\include;..\..\common_audio\signal_processing\include;..\..\system_wrappers\interface</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\modules\interface;C:\Projects\webrtc_src_old\modules\audio_processing;C:\Projects\webrtc_src_old\modules\audio_processing\utility;C:\Projects\webrtc_src_old\modules\audio_processing\include;C:\Projects\webrtc_src_old\modules\audio_processing\aec\include;C:\Projects\webrtc_src_old\modules\audio_processing\aecm\include;C:\Projects\webrtc_src_old\modules\audio_processing\agc\include;C:\Projects\webrtc_src_old\modules\audio_processing\ns\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\system_wrappers\interface</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\modules\interface;..\..\modules\audio_processing;..\..\modules\audio_processing\utility;..\..\modules\audio_processing\include;..\..\modules\audio_processing\aec\include;..\..\modules\audio_processing\aecm\include;..\..\modules\audio_processing\agc\include;..\..\modules\audio_processing\ns\include;..\..\common_audio\signal_processing\include;..\..\system_wrappers\interface</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

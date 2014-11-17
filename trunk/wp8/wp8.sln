@@ -6,8 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "system_wrappers", "system_wrappers\system_wrappers.vcxproj", "{FADCBB0B-A396-468E-B641-8C57DAFEBA57}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common_audio", "common_audio\common_audio.vcxproj", "{CF6D0891-9034-4302-9460-9E68EB5CB5EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FADCBB0B-A396-468E-B641-8C57DAFEBA57} = {FADCBB0B-A396-468E-B641-8C57DAFEBA57}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "audio_processing", "audio_processing\audio_processing.vcxproj", "{E10CB200-442E-429E-88E3-DF3790DC89FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FADCBB0B-A396-468E-B641-8C57DAFEBA57} = {FADCBB0B-A396-468E-B641-8C57DAFEBA57}
+		{CF6D0891-9034-4302-9460-9E68EB5CB5EA} = {CF6D0891-9034-4302-9460-9E68EB5CB5EA}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
