@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="vad">
+      <UniqueIdentifier>{4bb57390-730e-403a-a1ab-c899e8032ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="signal_processing">
+      <UniqueIdentifier>{5b608ecf-b84c-4b0d-993b-d9c3b3a0d529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resampler">
+      <UniqueIdentifier>{ca931df1-5549-4526-90e4-78c372e9a6f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common_audio\resampler\resampler.cc">
+      <Filter>resampler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\auto_corr_to_refl_coef.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\auto_correlation.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\complex_bit_reverse.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\complex_fft.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\copy_set_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\cross_correlation.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\division_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\dot_product_with_scale.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\downsample_fast.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\energy.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\filter_ar.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\filter_ar_fast_q12.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\filter_ma_fast_q12.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\get_hanning_window.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\get_scaling_square.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\ilbc_specific_functions.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\levinson_durbin.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\lpc_to_refl_coef.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\min_max_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\randomization_functions.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\real_fft.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\refl_coef_to_lpc.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\resample.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\resample_48khz.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\resample_by_2.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\resample_by_2_internal.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\resample_fractional.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\spl_sqrt.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\spl_sqrt_floor.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\spl_version.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\splitting_filter.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\sqrt_of_one_minus_x_squared.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\vector_scaling_operations.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\webrtc_fft_t_1024_8.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\signal_processing\webrtc_fft_t_rad.c">
+      <Filter>signal_processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\vad\vad_core.c">
+      <Filter>vad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\vad\vad_filterbank.c">
+      <Filter>vad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\vad\vad_gmm.c">
+      <Filter>vad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\vad\vad_sp.c">
+      <Filter>vad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common_audio\vad\webrtc_vad.c">
+      <Filter>vad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common_audio\signal_processing\resample_by_2_internal.h">
+      <Filter>signal_processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common_audio\vad\vad_core.h">
+      <Filter>vad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common_audio\vad\vad_filterbank.h">
+      <Filter>vad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common_audio\vad\vad_gmm.h">
+      <Filter>vad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common_audio\vad\vad_sp.h">
+      <Filter>vad</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\common_audio\signal_processing\complex_bit_reverse_arm.s">
+      <Filter>signal_processing</Filter>
+    </None>
+    <None Include="..\..\common_audio\signal_processing\cross_correlation_neon.s">
+      <Filter>signal_processing</Filter>
+    </None>
+    <None Include="..\..\common_audio\signal_processing\downsample_fast_neon.s">
+      <Filter>signal_processing</Filter>
+    </None>
+    <None Include="..\..\common_audio\signal_processing\filter_ar_fast_q12_armv7.s">
+      <Filter>signal_processing</Filter>
+    </None>
+    <None Include="..\..\common_audio\signal_processing\min_max_operations_neon.s">
+      <Filter>signal_processing</Filter>
+    </None>
+    <None Include="..\..\common_audio\signal_processing\spl_sqrt_floor_arm.s">
+      <Filter>signal_processing</Filter>
+    </None>
+    <None Include="..\..\common_audio\signal_processing\vector_scaling_operations_neon.s">
+      <Filter>signal_processing</Filter>
+    </None>
+  </ItemGroup>
+</Project>

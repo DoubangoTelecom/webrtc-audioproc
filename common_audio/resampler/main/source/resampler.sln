@@ -1,0 +1,65 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(main)", "..\..\..\..\..\..\resampler\main", "{4EA819C9-0A0A-B3FF-A1E9-77CBDD774B6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(main)", "..\..\..\..\..\..\signal_processing_library\main", "{57CECD23-0E30-75F0-02D6-09FCEFD89A6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(resampler)", "..\..\..\..\..\..\resampler", "{91FF5B7B-79C1-4AEA-142A-1DF685AA6F30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(signal_processing_library)", "..\..\..\..\..\..\signal_processing_library", "{F2E2E140-BF4A-B6CE-2AB0-639AA2CCE07E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(source)", "..\..\..\..\..\..\signal_processing_library\main\source", "{55E4BF5F-FBB4-8B52-5632-3E0D72A5C40D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(source)", "..\..\..\..\..\..\resampler\main\source", "{F863E68C-C805-6771-AD40-BC2F8920DD77}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "resampler", "resampler.vcproj", "{35F3D825-E553-7222-71F7-1FB39D2BE638}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spl", "..\..\..\signal_processing_library\main\source\spl.vcproj", "{8659E754-46C9-79F1-13CC-260EA5495ECD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|x64 = Release|x64
+		Purify|Win32 = Purify|Win32
+		Purify|x64 = Purify|x64
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Debug|Win32.Build.0 = Debug|Win32
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Release|x64.ActiveCfg = Release|x64
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Release|x64.Build.0 = Release|x64
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Purify|Win32.ActiveCfg = Purify|Win32
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Purify|Win32.Build.0 = Purify|Win32
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Purify|x64.ActiveCfg = Purify|x64
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Purify|x64.Build.0 = Purify|x64
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Debug|x64.ActiveCfg = Debug|x64
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Debug|x64.Build.0 = Debug|x64
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Release|Win32.ActiveCfg = Release|Win32
+		{35F3D825-E553-7222-71F7-1FB39D2BE638}.Release|Win32.Build.0 = Release|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|Win32.Build.0 = Debug|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|x64.ActiveCfg = Release|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|x64.Build.0 = Release|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|Win32.ActiveCfg = Purify|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|Win32.Build.0 = Purify|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|x64.ActiveCfg = Purify|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|x64.Build.0 = Purify|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|x64.ActiveCfg = Debug|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|x64.Build.0 = Debug|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|Win32.ActiveCfg = Release|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F863E68C-C805-6771-AD40-BC2F8920DD77} = {4EA819C9-0A0A-B3FF-A1E9-77CBDD774B6A}
+		{55E4BF5F-FBB4-8B52-5632-3E0D72A5C40D} = {57CECD23-0E30-75F0-02D6-09FCEFD89A6E}
+		{4EA819C9-0A0A-B3FF-A1E9-77CBDD774B6A} = {91FF5B7B-79C1-4AEA-142A-1DF685AA6F30}
+		{57CECD23-0E30-75F0-02D6-09FCEFD89A6E} = {F2E2E140-BF4A-B6CE-2AB0-639AA2CCE07E}
+		{8659E754-46C9-79F1-13CC-260EA5495ECD} = {55E4BF5F-FBB4-8B52-5632-3E0D72A5C40D}
+		{35F3D825-E553-7222-71F7-1FB39D2BE638} = {F863E68C-C805-6771-AD40-BC2F8920DD77}
+	EndGlobalSection
+EndGlobal

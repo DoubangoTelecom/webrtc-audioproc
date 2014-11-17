@@ -1,0 +1,65 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(main)", "..\..\..\..\..\..\signal_processing_library\main", "{57CECD23-0E30-75F0-02D6-09FCEFD89A6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(main)", "..\..\..\..\..\..\vad\main", "{6E6D1204-2EC9-5CD7-FBF7-F3F468A16C9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(signal_processing_library)", "..\..\..\..\..\..\signal_processing_library", "{F2E2E140-BF4A-B6CE-2AB0-639AA2CCE07E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(source)", "..\..\..\..\..\..\signal_processing_library\main\source", "{55E4BF5F-FBB4-8B52-5632-3E0D72A5C40D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(source)", "..\..\..\..\..\..\vad\main\source", "{FA833D51-DC78-4E49-47CC-041C445B5E63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(vad)", "..\..\..\..\..\..\vad", "{2BCC7F59-8467-E370-328A-28ED66C630F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spl", "..\..\..\signal_processing_library\main\source\spl.vcproj", "{8659E754-46C9-79F1-13CC-260EA5495ECD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vad", "vad.vcproj", "{AB055DB0-D54C-8EBB-0026-710D2141D438}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|x64 = Release|x64
+		Purify|Win32 = Purify|Win32
+		Purify|x64 = Purify|x64
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|Win32.Build.0 = Debug|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|x64.ActiveCfg = Release|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|x64.Build.0 = Release|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|Win32.ActiveCfg = Purify|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|Win32.Build.0 = Purify|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|x64.ActiveCfg = Purify|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Purify|x64.Build.0 = Purify|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|x64.ActiveCfg = Debug|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Debug|x64.Build.0 = Debug|x64
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|Win32.ActiveCfg = Release|Win32
+		{8659E754-46C9-79F1-13CC-260EA5495ECD}.Release|Win32.Build.0 = Release|Win32
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Debug|Win32.Build.0 = Debug|Win32
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Release|x64.ActiveCfg = Release|x64
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Release|x64.Build.0 = Release|x64
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Purify|Win32.ActiveCfg = Purify|Win32
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Purify|Win32.Build.0 = Purify|Win32
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Purify|x64.ActiveCfg = Purify|x64
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Purify|x64.Build.0 = Purify|x64
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Debug|x64.ActiveCfg = Debug|x64
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Debug|x64.Build.0 = Debug|x64
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Release|Win32.ActiveCfg = Release|Win32
+		{AB055DB0-D54C-8EBB-0026-710D2141D438}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55E4BF5F-FBB4-8B52-5632-3E0D72A5C40D} = {57CECD23-0E30-75F0-02D6-09FCEFD89A6E}
+		{FA833D51-DC78-4E49-47CC-041C445B5E63} = {6E6D1204-2EC9-5CD7-FBF7-F3F468A16C9A}
+		{57CECD23-0E30-75F0-02D6-09FCEFD89A6E} = {F2E2E140-BF4A-B6CE-2AB0-639AA2CCE07E}
+		{8659E754-46C9-79F1-13CC-260EA5495ECD} = {55E4BF5F-FBB4-8B52-5632-3E0D72A5C40D}
+		{AB055DB0-D54C-8EBB-0026-710D2141D438} = {FA833D51-DC78-4E49-47CC-041C445B5E63}
+		{6E6D1204-2EC9-5CD7-FBF7-F3F468A16C9A} = {2BCC7F59-8467-E370-328A-28ED66C630F7}
+	EndGlobalSection
+EndGlobal
