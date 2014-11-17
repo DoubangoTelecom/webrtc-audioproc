@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\common_audio\resampler\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\common_audio\vad\include"
+				AdditionalIncludeDirectories="..\..;..\..\common_audio\resampler\include;..\..\common_audio\signal_processing\include;..\..\common_audio\vad\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -105,7 +105,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\common_audio\resampler\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\common_audio\vad\include"
+				AdditionalIncludeDirectories="..\..;..\..\common_audio\resampler\include;..\..\common_audio\signal_processing\include;..\..\common_audio\vad\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
