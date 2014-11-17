@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="C:\Projects\webrtc_src_old\system_wrappers\interface;C:\Projects\webrtc_src_old"
+				AdditionalIncludeDirectories="..\..\system_wrappers\interface;..\.."
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -105,7 +105,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="C:\Projects\webrtc_src_old\system_wrappers\interface;C:\Projects\webrtc_src_old"
+				AdditionalIncludeDirectories="..\..\system_wrappers\interface;..\.."
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
