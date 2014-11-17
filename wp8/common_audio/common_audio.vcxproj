@@ -61,7 +61,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\common_audio\resampler\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\common_audio\vad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\common_audio\resampler\include;..\..\common_audio\signal_processing\include;..\..\common_audio\vad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\common_audio\resampler\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\common_audio\vad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\common_audio\resampler\include;..\..\common_audio\signal_processing\include;..\..\common_audio\vad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -87,7 +87,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\common_audio\resampler\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\common_audio\vad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\common_audio\resampler\include;..\..\common_audio\signal_processing\include;..\..\common_audio\vad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Projects\webrtc_src_old;C:\Projects\webrtc_src_old\common_audio\resampler\include;C:\Projects\webrtc_src_old\common_audio\signal_processing\include;C:\Projects\webrtc_src_old\common_audio\vad\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..;..\..\common_audio\resampler\include;..\..\common_audio\signal_processing\include;..\..\common_audio\vad\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
