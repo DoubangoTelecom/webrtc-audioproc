@@ -131,6 +131,9 @@ if test "$target_os" = "android"; then
 	export AS=$ANDROID_TOOLCHAIN/bin/$ANDROID_PREFIX-as
 	export RANLIB=$ANDROID_TOOLCHAIN/bin/$ANDROID_PREFIX-ranlib
 	export STRIP=$ANDROID_TOOLCHAIN/bin/$ANDROID_PREFIX-strip
+else
+	test $target_os = osx && export CFLAGS="${CFLAGS} -DWEBRTC_MAC"
+	test $target_os = linux && export CFLAGS="${CFLAGS} -DWEBRTC_LINUX"
 fi
 
 dnl find suitable C and C++ compilers
