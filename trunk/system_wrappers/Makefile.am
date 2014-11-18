@@ -5,6 +5,7 @@ libsystem_wrappers_la_CPPFLAGS = -Iinterface -I.
 libsystem_wrappers_la_SOURCES  = \
 	source/aligned_malloc.cc\
 	source/cpu.cc\
+	source/cpu_features.cc\
 	source/cpu_info.cc
 	
 
