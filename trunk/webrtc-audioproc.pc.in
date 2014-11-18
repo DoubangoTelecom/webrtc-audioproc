@@ -1,0 +1,15 @@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+libdir = @libdir@
+includedir = @includedir@
+
+Name : libwebrtc-audioproc
+Description : Audio Proc (WebRTC)
+Version : @PACKAGE_VERSION@
+Requires: 
+Requires.private: common_audio = @PACKAGE_VERSION@ audio_processing = @PACKAGE_VERSION@ system_wrappers = @PACKAGE_VERSION@
+Conflicts:
+Cflags : -I${includedir} -I${includedir}/webrtc
+Libs : 
+Libs.private: 
+

@@ -1,0 +1,14 @@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+libdir = @libdir@
+includedir = @includedir@
+
+Name : libsystem_wrappers
+Description : libsystem_wrappers (WebRTC)
+Version : @PACKAGE_VERSION@
+Requires: 
+Requires.private: 
+Conflicts:
+Cflags : -I${includedir}/webrtc
+Libs : -L${libdir} -lsystem_wrappers
+Libs.private: 
