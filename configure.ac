@@ -10,7 +10,6 @@ AC_INIT(libwebrtc-audioproc, 2.0.0, doubango(at)googlegroups(dot)com)
 AC_CANONICAL_SYSTEM
 AC_CANONICAL_HOST
 AM_INIT_AUTOMAKE([subdir-objects])
-AM_PROG_AS
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([system_wrappers/source/aligned_malloc.cc])
@@ -19,20 +18,29 @@ AC_CONFIG_SRCDIR([system_wrappers/source/aligned_malloc.cc])
 target_os=`uname -s`
 target_cpu=unknown
 
+AM_CONDITIONAL([UNDER_ARM], false)
+AM_CONDITIONAL([UNDER_X86], false)
+AM_CONDITIONAL([UNDER_ARM_V7], false)
+AM_CONDITIONAL([UNDER_ARM_NEON], false)
+
 case "$host" in
   arm-*-linux-androideabi)
     target_os=android
     target_cpu=armv5te
+    AM_CONDITIONAL([UNDER_ARM], true)
     ;;
    i686-*-linux-android)
     target_os=android
     target_cpu=x86
+    AM_CONDITIONAL([UNDER_X86], true)
     ;;
    x86_64*)
      target_cpu=x86_64
+     AM_CONDITIONAL([UNDER_X86], true)
     ;;
    i386*)
      target_cpu=i386
+     AM_CONDITIONAL([UNDER_X86], true)
     ;;
   *)
     AC_MSG_NOTICE(["Using host as target os: $host"])
@@ -45,6 +53,9 @@ case $target_os in
 	;;
 	darwin*)
 		target_os=osx
+	;;
+	android*)
+		
 	;;
 	*)
 		target_os=linux
@@ -73,39 +84,42 @@ if test "$target_os" = "android"; then
     			export ANDROID_PREFIX=i686-linux-android
 			export ANDROID_TOOLCHAIN=$(pwd)/my-android-toolchain-android-x86
     			$NDK/build/tools/make-standalone-toolchain.sh --platform=android-9 --arch=x86 --install-dir=$ANDROID_TOOLCHAIN
-			AC_SUBST(TARGET_ARCH, "x86")
+			AM_CONDITIONAL([UNDER_X86], true)
 		;;
 		armv7-a)
 			export ANDROID_PREFIX=arm-linux-androideabi
 			export SYSROOT=$NDK/platforms/android-3/arch-arm
 			export ANDROID_TOOLCHAIN=$(pwd)/my-android-toolchain-android-armv7-a
     			$NDK/build/tools/make-standalone-toolchain.sh --platform=android-3 --install-dir=$ANDROID_TOOLCHAIN
-    			export CFLAGS='${CFLAGS} -march=armv7-a -mfloat-abi=softfp -D__ARMEL__'
+    			export CFLAGS='-march=armv7-a -mfloat-abi=softfp -D__ARMEL__'
     			export LDFLAGS='-Wl,--fix-cortex-a8'
-			AC_SUBST(TARGET_ARCH, "arm")
+			AM_CONDITIONAL([UNDER_ARM], true)
+			AM_CONDITIONAL([UNDER_ARM_V7], true)
 		;;
 		armv7-a-neon)
 			export ANDROID_PREFIX=arm-linux-androideabi
 			export SYSROOT=$NDK/platforms/android-3/arch-arm
     			export ANDROID_TOOLCHAIN=$(pwd)/my-android-toolchain-android-armv7-a-neon
     			$NDK/build/tools/make-standalone-toolchain.sh --platform=android-3 --install-dir=$ANDROID_TOOLCHAIN
-    			export CFLAGS='${CFLAGS} -march=armv7-a -mfloat-abi=softfp -mfpu=neon -D__ARMEL__'
+    			export CFLAGS='-march=armv7-a -mfloat-abi=softfp -mfpu=neon -D__ARMEL__'
     			export LDFLAGS='-Wl,--fix-cortex-a8'
-			AC_SUBST(TARGET_ARCH, "arm")
+			AM_CONDITIONAL([UNDER_ARM], true)
+			AM_CONDITIONAL([UNDER_ARM_V7], true)
+			AM_CONDITIONAL([UNDER_ARM_NEON], true)
 		;;
 		*)
 			export ANDROID_PREFIX=arm-linux-androideabi
 			export SYSROOT=$NDK/platforms/android-3/arch-arm
 			export ANDROID_TOOLCHAIN=$(pwd)/my-android-toolchain-armv5te
     			$NDK/build/tools/make-standalone-toolchain.sh --platform=android-3 --install-dir=$ANDROID_TOOLCHAIN
-			export CFLAGS='${CFLAGS} -D__ARMEL__'
-			AC_SUBST(TARGET_ARCH, "arm")
+			export CFLAGS='-D__ARMEL__'
+			AM_CONDITIONAL([UNDER_ARM], true)
 		;;
 	esac
 
 	AC_SUBST(NDK, $NDK)
 	
-	export CFLAGS="${CFLAGS} -DANDROID=1 -fPIC"
+	export CFLAGS="${CFLAGS} -DANDROID=1 -DWEBRTC_ANDROID=1 -fPIC"
 	export CPPFLAGS=$CFLAGS
 	export LDFLAGS="${LDFLAGS} -lc -lm -lgcc"
 
@@ -119,12 +133,8 @@ if test "$target_os" = "android"; then
 	export STRIP=$ANDROID_TOOLCHAIN/bin/$ANDROID_PREFIX-strip
 fi
 
-AM_CONDITIONAL([UNDER_X86], [test $TARGET_ARCH = x86 || test $target_cpu = x86 || test $target_cpu = i386 || test $target_cpu = x86_64])
-AM_CONDITIONAL([UNDER_ARM], [test $TARGET_ARCH = arm])
-AM_CONDITIONAL([UNDER_ARM_V7], [test $target_cpu = armv7-a || test $target_cpu = armv7-a-neon])
-AM_CONDITIONAL([UNDER_ARM_NEON], [test $target_cpu = armv7-a-neon])
-
 dnl find suitable C and C++ compilers
+AM_PROG_AS
 AC_PROG_CC
 AC_PROG_CXX
 
