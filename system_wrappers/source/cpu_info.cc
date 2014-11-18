@@ -10,6 +10,7 @@
 
 #include "cpu_info.h"
 
+#include<stdio.h>
 #if defined(_WIN32)
 #include <Windows.h>
 #elif defined(WEBRTC_MAC)
@@ -29,6 +30,12 @@ namespace webrtc {
 
 WebRtc_UWord32 CpuInfo::_numberOfCores = 0;
 
+#define DOUBANGO_DEBUG_INFO(FMT, ...) fprintf(stderr, "*WEBRTC_INFO: " FMT "\n", ##__VA_ARGS__);
+#define DOUBANGO_DEBUG_ERROR(FMT, ...) fprintf(stderr, "***WEBRTC_ERROR: function: \"%s()\" \nfile: \"%s\" \nline: \"%u\" \nMSG: " FMT "\n", __FUNCTION__,  __FILE__, __LINE__, ##__VA_ARGS__);
+#define DOUBANGO_DEBUG_WARN(FMT, ...) fprintf(stderr, "**WARN: function: \"%s()\" \nfile: \"%s\" \nline: \"%u\" \nMSG: " FMT "\n", __FUNCTION__,  __FILE__, __LINE__, ##__VA_ARGS__);
+
+#define DOUBANGO_LOGS 1
+
 WebRtc_UWord32 CpuInfo::DetectNumberOfCores()
 {
     if (!_numberOfCores)
@@ -37,14 +44,21 @@ WebRtc_UWord32 CpuInfo::DetectNumberOfCores()
         SYSTEM_INFO si;
         GetSystemInfo(&si);
         _numberOfCores = static_cast<WebRtc_UWord32>(si.dwNumberOfProcessors);
+#	if DOUBANGO_LOGS
+		DOUBANGO_DEBUG_INFO("Available number of cores:%d", _numberOfCores);
+#	else
         WEBRTC_TRACE(kTraceStateInfo, kTraceUtility, -1,
                      "Available number of cores:%d", _numberOfCores);
+#	endif /* DOUBANGO_LOGS */
 
 #elif defined(WEBRTC_LINUX) && !defined(WEBRTC_ANDROID)
         _numberOfCores = get_nprocs();
+#	if DOUBANGO_LOGS
+		DOUBANGO_DEBUG_INFO("Available number of cores:%d", _numberOfCores);
+#	else
         WEBRTC_TRACE(kTraceStateInfo, kTraceUtility, -1,
                      "Available number of cores:%d", _numberOfCores);
-
+#	endif /* DOUBANGO_LOGS */
 #elif (defined(WEBRTC_MAC) || defined(WEBRTC_MAC_INTEL))
         int name[] = {CTL_HW, HW_AVAILCPU};
         int ncpu;
@@ -52,17 +66,30 @@ WebRtc_UWord32 CpuInfo::DetectNumberOfCores()
         if(0 == sysctl(name, 2, &ncpu, &size, NULL, 0))
         {
             _numberOfCores = static_cast<WebRtc_UWord32>(ncpu);
-            WEBRTC_TRACE(kTraceStateInfo, kTraceUtility, -1,
-                         "Available number of cores:%d", _numberOfCores);
+#		if DOUBANGO_LOGS
+			DOUBANGO_DEBUG_INFO("Available number of cores:%d", _numberOfCores);
+#		else
+			WEBRTC_TRACE(kTraceStateInfo, kTraceUtility, -1,
+                     "Available number of cores:%d", _numberOfCores);
+#		endif /* DOUBANGO_LOGS */
     } else
     {
-            WEBRTC_TRACE(kTraceError, kTraceUtility, -1,
+#		if DOUBANGO_LOGS
+			DOUBANGO_DEBUG_ERROR(Failed to get number of cores"");
+#		else
+			WEBRTC_TRACE(kTraceError, kTraceUtility, -1,
                          "Failed to get number of cores");
+#		endif /* DOUBANGO_LOGS */
+            
             _numberOfCores = 1;
     }
 #else
+#	if DOUBANGO_LOGS
+		DOUBANGO_DEBUG_WARN("No function to get number of cores");
+#	else
         WEBRTC_TRACE(kTraceWarning, kTraceUtility, -1,
                      "No function to get number of cores");
+#	endif/* DOUBANGO_LOGS */
         _numberOfCores = 1;
 #endif
     }
