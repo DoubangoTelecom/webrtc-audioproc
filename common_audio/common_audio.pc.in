@@ -1,0 +1,16 @@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+libdir = @libdir@
+includedir = @includedir@
+
+Name : libcommon_audio
+Description : common_audio (WebRTC)
+Version : @PACKAGE_VERSION@
+Requires: 
+Requires.private: system_wrappers = @PACKAGE_VERSION@
+Conflicts:
+Cflags : -I${includedir}/webrtc
+Libs : -L${libdir} -lcommon_audio
+Libs.private: 
+
+
