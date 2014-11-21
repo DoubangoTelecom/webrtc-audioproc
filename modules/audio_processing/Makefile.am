@@ -29,6 +29,8 @@ libaudio_processing_la_SOURCES =       aec/aec_core.c\
 if UNDER_X86
 libaudio_processing_la_SOURCES += aec/aec_core_sse2.c\
 	aec/aec_rdft_sse2.c
+
+libaudio_processing_la_CPPFLAGS += -msse2
 endif
 
 if UNDER_ARM
