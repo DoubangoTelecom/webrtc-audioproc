@@ -16,7 +16,7 @@ AC_CONFIG_SRCDIR([system_wrappers/source/aligned_malloc.cc])
 
 ### HOST FOR CROSS-COMPILING
 target_os=`uname -s`
-target_cpu=unknown
+target_cpu=`uname -m`
 
 AM_CONDITIONAL([UNDER_ARM], false)
 AM_CONDITIONAL([UNDER_X86], false)
@@ -40,6 +40,10 @@ case "$host" in
     ;;
    i386*)
      target_cpu=i386
+     AM_CONDITIONAL([UNDER_X86], true)
+    ;;
+   i686*)
+     target_cpu=i686
      AM_CONDITIONAL([UNDER_X86], true)
     ;;
   *)
@@ -223,6 +227,7 @@ AC_MSG_NOTICE([
 **************************************************************************
 Cross Compilation:   ${cross_compiling}
 Target OS:           ${target_os}
+Target CPU:          ${target_cpu}
 Host setup:          ${host}
 Host CPU:            ${host_cpu}
 Install prefix:      ${prefix}
