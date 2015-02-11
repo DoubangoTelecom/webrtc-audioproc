@@ -95,7 +95,7 @@ if test "$target_os" = "android"; then
 			export SYSROOT=$NDK/platforms/android-3/arch-arm
 			export ANDROID_TOOLCHAIN=$(pwd)/my-android-toolchain-android-armv7-a
     			$NDK/build/tools/make-standalone-toolchain.sh --platform=android-3 --install-dir=$ANDROID_TOOLCHAIN
-    			export CFLAGS='-march=armv7-a -mfloat-abi=softfp -D__ARMEL__'
+    			export CFLAGS='-march=armv7-a -mfloat-abi=softfp -D__ARMEL__ -DWEBRTC_DETECT_ARM_NEON'
     			export LDFLAGS='-Wl,--fix-cortex-a8'
 			AM_CONDITIONAL([UNDER_ARM], true)
 			AM_CONDITIONAL([UNDER_ARM_V7], true)
@@ -105,7 +105,7 @@ if test "$target_os" = "android"; then
 			export SYSROOT=$NDK/platforms/android-3/arch-arm
     			export ANDROID_TOOLCHAIN=$(pwd)/my-android-toolchain-android-armv7-a-neon
     			$NDK/build/tools/make-standalone-toolchain.sh --platform=android-3 --install-dir=$ANDROID_TOOLCHAIN
-    			export CFLAGS='-march=armv7-a -mfloat-abi=softfp -mfpu=neon -D__ARMEL__'
+    			export CFLAGS='-march=armv7-a -mfloat-abi=softfp -mfpu=neon -D__ARMEL__ -DWEBRTC_ARCH_ARM_NEON'
     			export LDFLAGS='-Wl,--fix-cortex-a8'
 			AM_CONDITIONAL([UNDER_ARM], true)
 			AM_CONDITIONAL([UNDER_ARM_V7], true)
