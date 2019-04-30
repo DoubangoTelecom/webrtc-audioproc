@@ -10,7 +10,8 @@ libsystem_wrappers_la_SOURCES  = \
 	
 
 if UNDER_ANDROID
-libsystem_wrappers_la_SOURCES  += source/cpu_features_android.c
+libsystem_wrappers_la_SOURCES  += source/cpu_features_android.c \
+	source/android/cpu-features.c
 endif
 
 if UNDER_WINDOWS
